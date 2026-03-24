@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --color-primary: #e63946;
+  --color-secondary: #f1faee;
+  --color-accent: #a8dadc;
+  --color-dark: #1d3557;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap');
+
+body {
+  @apply bg-secondary text-dark font-sans;
+}
+
+.nav-link {
+  @apply hover:text-primary transition-colors duration-200 font-medium;
+}
+
+.btn-primary {
+  @apply bg-primary text-white px-6 py-3 rounded-full font-bold hover:opacity-90 transition-all transform hover:scale-105 active:scale-95 shadow-lg;
+}
+
+.section-title {
+  @apply font-display text-4xl md:text-5xl mb-8 text-center;
+}
